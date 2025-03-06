@@ -14,5 +14,24 @@ namespace BuisnessLayer.Service
         {
             return "Hello World";
         }
+        public string GetGreeting(string? firstName,string? lastName)
+        {
+            if (!string.IsNullOrWhiteSpace(firstName?.Trim()) && !string.IsNullOrWhiteSpace(lastName?.Trim()))
+            {
+                return $"Hello, {firstName} {lastName}";
+            }
+            else if (!string.IsNullOrWhiteSpace(firstName?.Trim()))
+            {
+                return $"Hello, {firstName}";
+            }
+            else if (!string.IsNullOrWhiteSpace(lastName?.Trim()))
+            {
+                return $"Hello, {lastName}";
+            }
+            else
+            {
+                return "Hello World";
+            }
+        }
     }
 }

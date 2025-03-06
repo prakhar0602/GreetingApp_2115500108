@@ -69,6 +69,27 @@
   },
   {
     "ContainingType": "GreetingApp.Controllers.GreetingController",
+    "Method": "GetGreeting",
+    "RelativePath": "Greeting/GetGreeting",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "firstName",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "lastName",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreetingApp.Controllers.GreetingController",
     "Method": "SimpleGreeting",
     "RelativePath": "Greeting/SimpleGreeting",
     "HttpMethod": "GET",

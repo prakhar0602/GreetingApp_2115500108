@@ -10,7 +10,7 @@ namespace ModelLayer.DTO
     {
         public string status { get; set; }
         public string message { get; set; }
-        public T data { get; set; }
+        public T data { get; set; } = default(T);
     
     }
 }
