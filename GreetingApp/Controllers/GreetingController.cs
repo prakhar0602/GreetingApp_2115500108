@@ -18,7 +18,6 @@ namespace GreetingApp.Controllers
         public IActionResult Get()
         {
             ResponseBody<string> response = new ResponseBody<string>();
-            response.data = null;
             response.message = "Hello from greeting App";
             response.status = "200";
             return Ok(response);
@@ -38,7 +37,6 @@ namespace GreetingApp.Controllers
         public IActionResult Delete()
         {
             ResponseBody<string> response = new ResponseBody<string>();
-            response.data = null;
             response.message = "Deleted Message";
             response.status = "200";
             return Ok(response);
@@ -58,6 +56,7 @@ namespace GreetingApp.Controllers
         public IActionResult Put([FromBody] string xy) {
             ResponseBody<string> response = new ResponseBody<string>();
             response.data = xy;
+
             response.message = "Message Updated Completely";
             response.status = "200";
             return Ok(response);
@@ -73,5 +72,17 @@ namespace GreetingApp.Controllers
             response.data = result;
             return Ok(response);
         }
+
+        [HttpGet("GetGreeting")]
+        public IActionResult GetGreeting([FromQuery] string? firstName, [FromQuery]string? lastName)
+        {
+            string result = _greetingBLinstance.GetGreeting(firstName,lastName);
+            ResponseBody<string> response = new ResponseBody<string>();
+            response.status = "200";
+            response.message = "Greeting sent";
+            response.data = result;
+            return Ok(response);
+        }
+
     }
 }
