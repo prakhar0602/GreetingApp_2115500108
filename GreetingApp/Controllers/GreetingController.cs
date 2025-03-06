@@ -1,12 +1,19 @@
+using BuisnessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTO;
 
 namespace GreetingApp.Controllers
+
 {
     [ApiController]
     [Route("[controller]")]
     public class GreetingController : ControllerBase
     {
+        private IGreetingBL _greetingBLinstance;
+        public GreetingController(IGreetingBL greeting)
+        {
+            _greetingBLinstance = greeting;
+        }
         [HttpGet]
         public IActionResult Get()
         {
@@ -53,6 +60,17 @@ namespace GreetingApp.Controllers
             response.data = xy;
             response.message = "Message Updated Completely";
             response.status = "200";
+            return Ok(response);
+        }
+
+        [HttpGet("SimpleGreeting")]
+        public IActionResult SimpleGreeting()
+        {
+            string result = _greetingBLinstance.SimpleGreeting();
+            ResponseBody<string> response = new ResponseBody<string>();
+            response.status = "200";
+            response.message = "Greeting sent";
+            response.data = result;
             return Ok(response);
         }
     }

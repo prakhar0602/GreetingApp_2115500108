@@ -66,5 +66,15 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreetingApp.Controllers.GreetingController",
+    "Method": "SimpleGreeting",
+    "RelativePath": "Greeting/SimpleGreeting",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

@@ -1,0 +1,17 @@
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\BuisnessLayer.deps.json
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\BuisnessLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\BuisnessLayer.pdb
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\ModelLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\ModelLayer.pdb
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\bin\Debug\net6.0\RepositoryLayer.pdb
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.csproj.AssemblyReference.cache
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.AssemblyInfoInputs.cache
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.AssemblyInfo.cs
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.csproj.CoreCompileInputs.cache
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\Buisness.5534DC49.Up2Date
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\refint\BuisnessLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\BuisnessLayer.pdb
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\BuisnessLayer\obj\Debug\net6.0\ref\BuisnessLayer.dll
