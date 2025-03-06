@@ -8,7 +8,7 @@
     ".NETCoreApp,Version=v6.0": {
       "GreetingApp/1.0.0": {
         "dependencies": {
-          "ModelLayer": "1.0.0",
+          "BuisnessLayer": "1.0.0",
           "Swashbuckle.AspNetCore": "6.5.0"
         },
         "runtime": {
@@ -62,9 +62,32 @@
           }
         }
       },
+      "BuisnessLayer/1.0.0": {
+        "dependencies": {
+          "ModelLayer": "1.0.0",
+          "RepositoryLayer": "1.0.0"
+        },
+        "runtime": {
+          "BuisnessLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
       "ModelLayer/1.0.0": {
         "runtime": {
           "ModelLayer.dll": {
+            "assemblyVersion": "1.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      },
+      "RepositoryLayer/1.0.0": {
+        "dependencies": {
+          "ModelLayer": "1.0.0"
+        },
+        "runtime": {
+          "RepositoryLayer.dll": {
             "assemblyVersion": "1.0.0",
             "fileVersion": "1.0.0.0"
           }
@@ -120,7 +143,17 @@
       "path": "swashbuckle.aspnetcore.swaggerui/6.5.0",
       "hashPath": "swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
     },
+    "BuisnessLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "ModelLayer/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "RepositoryLayer/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

@@ -36,3 +36,7 @@ C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\obj\Debug\net6.0
 C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\obj\Debug\net6.0\GreetingApp.pdb
 C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\obj\Debug\net6.0\GreetingApp.genruntimeconfig.cache
 C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\obj\Debug\net6.0\ref\GreetingApp.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\bin\Debug\net6.0\BuisnessLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\bin\Debug\net6.0\RepositoryLayer.dll
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\bin\Debug\net6.0\BuisnessLayer.pdb
+C:\Users\galva\OneDrive\Documents\BL_C#\GreetingApp\GreetingApp\bin\Debug\net6.0\RepositoryLayer.pdb
