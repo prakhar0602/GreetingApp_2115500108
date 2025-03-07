@@ -1,6 +1,7 @@
 using BuisnessLayer.Interface;
 using Microsoft.AspNetCore.Mvc;
 using ModelLayer.DTO;
+using RepositoryLayer.Context;
 
 namespace GreetingApp.Controllers
 
@@ -10,9 +11,11 @@ namespace GreetingApp.Controllers
     public class GreetingController : ControllerBase
     {
         private IGreetingBL _greetingBLinstance;
-        public GreetingController(IGreetingBL greeting)
+        private GreetingDB _greetingContext;
+        public GreetingController(IGreetingBL greeting ,GreetingDB context)
         {
             _greetingBLinstance = greeting;
+            _greetingContext = context;
         }
         [HttpGet]
         public IActionResult Get()
@@ -84,5 +87,15 @@ namespace GreetingApp.Controllers
             return Ok(response);
         }
 
+        [HttpPost("AddMessage")]
+        public IActionResult addMessage([FromBody] string message)
+        {
+            ResponseBody<string> response = new ResponseBody<string>();
+            Message a = new Message();
+            a.message = message;
+            _greetingContext.Add(a);
+            _greetingContext.SaveChanges();
+            return Created("Created",response);
+        }
     }
 }
