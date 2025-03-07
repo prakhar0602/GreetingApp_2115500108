@@ -9,5 +9,6 @@ namespace RepositoryLayer.Interface
     public interface IGreetingRL
     {
         public bool addMessage(string? message);
+        public string findMessage(int? id);
     }
 }

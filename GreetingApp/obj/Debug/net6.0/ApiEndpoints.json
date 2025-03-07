@@ -85,6 +85,22 @@
   },
   {
     "ContainingType": "GreetingApp.Controllers.GreetingController",
+    "Method": "findMessage",
+    "RelativePath": "Greeting/FindMessage",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreetingApp.Controllers.GreetingController",
     "Method": "GetGreeting",
     "RelativePath": "Greeting/GetGreeting",
     "HttpMethod": "GET",

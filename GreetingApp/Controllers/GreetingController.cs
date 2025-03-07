@@ -93,5 +93,13 @@ namespace GreetingApp.Controllers
             response.message = _greetingBLinstance.addMessages(message);
             return Created("Created",response);
         }
+
+        [HttpPost("FindMessage")]
+        public IActionResult findMessage([FromBody] int id)
+        {
+            ResponseBody<string> response = new ResponseBody<string>();
+            response.message = _greetingBLinstance.findMessage(id);
+            return Ok(response);
+        }
     }
 }
