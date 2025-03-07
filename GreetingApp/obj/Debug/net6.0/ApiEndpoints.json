@@ -101,6 +101,16 @@
   },
   {
     "ContainingType": "GreetingApp.Controllers.GreetingController",
+    "Method": "getMessages",
+    "RelativePath": "Greeting/GetAllMessages",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "GreetingApp.Controllers.GreetingController",
     "Method": "GetGreeting",
     "RelativePath": "Greeting/GetGreeting",
     "HttpMethod": "GET",

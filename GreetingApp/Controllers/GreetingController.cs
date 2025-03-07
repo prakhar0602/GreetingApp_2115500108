@@ -101,5 +101,12 @@ namespace GreetingApp.Controllers
             response.message = _greetingBLinstance.findMessage(id);
             return Ok(response);
         }
+
+        [HttpGet("GetAllMessages")]
+        public IActionResult getMessages()
+        {
+            var list = _greetingBLinstance.getAllMessages();
+            return Ok(list);
+        }
     }
 }
