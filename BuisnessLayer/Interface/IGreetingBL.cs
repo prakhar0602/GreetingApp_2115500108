@@ -17,5 +17,6 @@ namespace BuisnessLayer.Interface
 
         public List<Message> getAllMessages();
         public string updateMessage(int id, string message);
+        public string deleteMessage(int id);
     }
 }

@@ -72,5 +72,16 @@ namespace BuisnessLayer.Service
                 return "Message Updation Failed";
             }
         }
+        public string deleteMessage(int id)
+        {
+            if(_repositoryLayerInstance.deleteMessage(id))
+            {
+                return "Message Deleted";
+            }
+            else
+            {
+                return "Message Deleetion Failed";
+            }
+        }
     }
 }

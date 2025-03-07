@@ -63,5 +63,19 @@ namespace RepositoryLayer.Service
                 return false;
             }
         }
+        public bool deleteMessage(int id)
+        {
+            try
+            {
+                _greetingContext.Messages.Remove(_greetingContext.Messages.Find(id));
+                _greetingContext.SaveChanges();
+                return true;
+            }
+            catch(Exception e)
+            {
+                Console.WriteLine(e.Message);
+                return false;
+            }
+        }
     }
 }

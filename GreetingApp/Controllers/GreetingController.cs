@@ -36,11 +36,10 @@ namespace GreetingApp.Controllers
         }
 
         [HttpDelete]
-        public IActionResult Delete()
+        public IActionResult Delete([FromQuery] int id)
         {
             ResponseBody<string> response = new ResponseBody<string>();
-            response.message = "Deleted Message";
-            response.status = "200";
+            response.message = _greetingBLinstance.deleteMessage(id);
             return Ok(response);
         }
 

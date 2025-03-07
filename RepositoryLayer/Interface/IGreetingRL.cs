@@ -15,5 +15,6 @@ namespace RepositoryLayer.Interface
         public List<Message> getAllMessages();
 
         public bool updateMessage(int id, string updatedMessage);
+        public bool deleteMessage(int id);
     }
 }
