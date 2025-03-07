@@ -5,11 +5,18 @@ using System.Net.Security;
 using System.Text;
 using System.Threading.Tasks;
 using BuisnessLayer.Interface;
+using ModelLayer.DTO;
+using RepositoryLayer.Interface;
 
 namespace BuisnessLayer.Service
 {
      public class GreetingBL:IGreetingBL
     {
+        private IGreetingRL _repositoryLayerInstance;
+        public GreetingBL(IGreetingRL instance)
+        {
+            _repositoryLayerInstance = instance;
+        }
         public string SimpleGreeting()
         {
             return "Hello World";
@@ -31,6 +38,18 @@ namespace BuisnessLayer.Service
             else
             {
                 return "Hello World";
+            }
+        }
+
+        public string addMessages(string? message)
+        {
+            if (_repositoryLayerInstance.addMessage(message))
+            {
+                return "Message Stored";
+            }
+            else
+            {
+                return "Message Creation Failed";
             }
         }
     }

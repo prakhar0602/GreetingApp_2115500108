@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\Github\\GreetingApp_2115500108\\ModelLayer\\ModelLayer.csproj": {}
+    "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\GreetingApp\\ModelLayer\\ModelLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\Github\\GreetingApp_2115500108\\ModelLayer\\ModelLayer.csproj": {
+    "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\GreetingApp\\ModelLayer\\ModelLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\Github\\GreetingApp_2115500108\\ModelLayer\\ModelLayer.csproj",
+        "projectUniqueName": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\GreetingApp\\ModelLayer\\ModelLayer.csproj",
         "projectName": "ModelLayer",
-        "projectPath": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\Github\\GreetingApp_2115500108\\ModelLayer\\ModelLayer.csproj",
+        "projectPath": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\GreetingApp\\ModelLayer\\ModelLayer.csproj",
         "packagesPath": "C:\\Users\\galva\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\Github\\GreetingApp_2115500108\\ModelLayer\\obj\\",
+        "outputPath": "C:\\Users\\galva\\OneDrive\\Documents\\BL_C#\\GreetingApp\\ModelLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

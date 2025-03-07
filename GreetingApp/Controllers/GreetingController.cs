@@ -11,11 +11,10 @@ namespace GreetingApp.Controllers
     public class GreetingController : ControllerBase
     {
         private IGreetingBL _greetingBLinstance;
-        private GreetingDB _greetingContext;
-        public GreetingController(IGreetingBL greeting ,GreetingDB context)
+        
+        public GreetingController(IGreetingBL greeting)
         {
             _greetingBLinstance = greeting;
-            _greetingContext = context;
         }
         [HttpGet]
         public IActionResult Get()
@@ -91,10 +90,7 @@ namespace GreetingApp.Controllers
         public IActionResult addMessage([FromBody] string message)
         {
             ResponseBody<string> response = new ResponseBody<string>();
-            Message a = new Message();
-            a.message = message;
-            _greetingContext.Add(a);
-            _greetingContext.SaveChanges();
+            response.message = _greetingBLinstance.addMessages(message);
             return Created("Created",response);
         }
     }
