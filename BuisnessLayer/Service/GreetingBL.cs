@@ -60,5 +60,17 @@ namespace BuisnessLayer.Service
         {
             return _repositoryLayerInstance.getAllMessages();
         }
+
+        public string updateMessage(int id,string updatedMessage)
+        {
+            if (_repositoryLayerInstance.updateMessage(id, updatedMessage))
+            {
+                return "Message Updated";
+            }
+            else
+            {
+                return "Message Updation Failed";
+            }
+        }
     }
 }

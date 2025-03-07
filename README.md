@@ -6,3 +6,4 @@
 [Prakhar Gupta] Implemented: AddMessage in Buisness Layer in UC4 and also implemented SQL Database connection.
 [Prakhar Gupta] Implemented: FindMessage in Buisness Layer, Repository Layer and Greeting Controller in UC5.
 [Prakhar Gupta] Implemented: GetAllMessages in Buisness Layer, Repository Layer and Greeting Controller in UC6.
+[Prakhar Gupta] Implemented: UpdateMessages in Buisness Layer, Repository Layer and Greeting Controller in UC7.
