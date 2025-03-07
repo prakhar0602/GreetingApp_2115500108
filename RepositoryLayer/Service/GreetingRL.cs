@@ -51,5 +51,17 @@ namespace RepositoryLayer.Service
             var list = _greetingContext.Messages.ToList();
             return list;
         }
+        public bool updateMessage(int id,string updatedMessage)
+        {
+            try{var message = _greetingContext.Messages.Find(id);
+            message.message = updatedMessage;
+            _greetingContext.SaveChanges();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+        }
     }
 }

@@ -45,12 +45,10 @@ namespace GreetingApp.Controllers
         }
 
         [HttpPatch]
-        public IActionResult Patch([FromBody] string xy )
+        public IActionResult Patch([FromBody] string xy, [FromQuery] int id )
         {
             ResponseBody<string> response = new ResponseBody<string>();
-            response.data = xy;
-            response.message = "Message Updated";
-            response.status = "200";
+            response.message = _greetingBLinstance.updateMessage(id, xy);
             return Ok(response);
         }
 

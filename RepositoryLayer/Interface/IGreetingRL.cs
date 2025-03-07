@@ -12,6 +12,8 @@ namespace RepositoryLayer.Interface
         public bool addMessage(string? message);
         public string findMessage(int? id);
 
-        public List<Message> getAllMessages(); 
+        public List<Message> getAllMessages();
+
+        public bool updateMessage(int id, string updatedMessage);
     }
 }
