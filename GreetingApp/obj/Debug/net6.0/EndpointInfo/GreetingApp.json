@@ -218,6 +218,18 @@
           }
         }
       }
+    },
+    "/Greeting/GetAllMessages": {
+      "get": {
+        "tags": [
+          "Greeting"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
     }
   },
   "components": { }

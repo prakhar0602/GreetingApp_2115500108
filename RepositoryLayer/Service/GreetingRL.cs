@@ -45,5 +45,11 @@ namespace RepositoryLayer.Service
                 return message.message;
             }
         }
+
+        public List<Message> getAllMessages()
+        {
+            var list = _greetingContext.Messages.ToList();
+            return list;
+        }
     }
 }

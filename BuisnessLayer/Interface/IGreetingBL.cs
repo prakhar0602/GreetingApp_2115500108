@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using ModelLayer.DTO;
 
 namespace BuisnessLayer.Interface
 {
@@ -13,5 +14,7 @@ namespace BuisnessLayer.Interface
         public string addMessages(string? message);
 
         public string findMessage(int? id);
+
+        public List<Message> getAllMessages();
     }
 }

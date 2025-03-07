@@ -56,5 +56,9 @@ namespace BuisnessLayer.Service
         {
             return _repositoryLayerInstance.findMessage(id);
         }
+        public List<Message> getAllMessages()
+        {
+            return _repositoryLayerInstance.getAllMessages();
+        }
     }
 }
