@@ -52,5 +52,9 @@ namespace BuisnessLayer.Service
                 return "Message Creation Failed";
             }
         }
+        public string findMessage(int? id)
+        {
+            return _repositoryLayerInstance.findMessage(id);
+        }
     }
 }

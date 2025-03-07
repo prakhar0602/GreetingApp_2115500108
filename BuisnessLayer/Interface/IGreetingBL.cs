@@ -11,5 +11,7 @@ namespace BuisnessLayer.Interface
         public string SimpleGreeting();
         public string GetGreeting(string? firstName, string? lastName);
         public string addMessages(string? message);
+
+        public string findMessage(int? id);
     }
 }

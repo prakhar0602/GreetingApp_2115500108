@@ -33,5 +33,17 @@ namespace RepositoryLayer.Service
             }
 
         }
+        public string findMessage(int? id)
+        {
+            var message = _greetingContext.Messages.Find(id);
+            if (message == null)
+            {
+                return "Messsage Not Found";
+            }
+            else
+            {
+                return message.message;
+            }
+        }
     }
 }
